@@ -3,34 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exNimbus — Infrastructure for Constrained Environments</title>
+  <title>Contact — exNimbus</title>
   <link rel="stylesheet" href="css/site.css">
-  <style>
-    body, html {
-      overflow-x: hidden;
-    }
-    .hero-home {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 2rem;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    .hero-home h1 {
-      text-shadow: 0 2px 40px rgba(0,0,0,0.7);
-    }
-    .hero-home p {
-      text-shadow: 0 1px 20px rgba(0,0,0,0.6);
-    }
-    .site-footer {
-      background: rgba(11, 15, 20, 0.95);
-    }
-  </style>
 </head>
-<body>
-
+<body class="inner-page">
 
   <!-- Site Nav -->
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
@@ -143,15 +119,27 @@
     </ul>
   </div>
 
-  <!-- Hero -->
+  <!-- Page Content -->
   <div class="page-body">
-    <section class="hero-home">
-      <span class="hero-eyebrow">exNimbus</span>
-      <h1>Modern infrastructure for constrained environments.</h1>
-      <p>Cloud-grade capabilities, deployed inside your perimeter. No external dependencies. No assumptions about connectivity.</p>
-      <div class="btn-group">
-        <a href="product.html" class="btn btn-primary">Explore Platform</a>
-        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+
+    <section class="hero">
+      <span class="hero-eyebrow">Contact</span>
+      <h1>Get in touch.</h1>
+      <p>We work with organizations operating in constrained, disconnected, and sensitive environments. If that describes you, reach out.</p>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section">
+      <div class="contact-grid">
+        <a href="mailto:sales@exnimb.us" class="mailto-card">
+          <div class="mail-address">sales@exnimb.us</div>
+          <div class="mail-label">Sales and partnerships</div>
+        </a>
+        <a href="mailto:contact@exnimb.us" class="mailto-card">
+          <div class="mail-address">contact@exnimb.us</div>
+          <div class="mail-label">General inquiries</div>
+        </a>
       </div>
     </section>
 
@@ -201,7 +189,6 @@
     </footer>
   </div>
 
-  </script>
   <script src="js/nav.js" defer></script>
 </body>
 </html>

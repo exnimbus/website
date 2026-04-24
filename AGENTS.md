@@ -36,18 +36,27 @@ Keep descriptions **vague and high-level**. exNimbus serves constrained, disconn
 
 General themes only:
 - Deployment modes: On-Prem, Air-Gapped, Hybrid, Edge
+  - **Hybrid** means synchronized between distributed peer-to-peer networks and central command-and-control — not cloud-hybrid
 - Target verticals: Defense & Intelligence, Critical Infrastructure, Government, Field Operations, Media
 - Security posture: zero trust, full audit logging, RBAC, no external telemetry
+- Platform is OS agnostic and Android accessible
 
-Our product offering primarily center on web mapping technologies, often based on 
-Open Geospatial consortium standards.  However, we also support file transfer and communication solutions built around WebRTC.  In any case, our user interface is the browser.
+Our product offering primarily centers on web mapping technologies based on Open Geospatial Consortium standards (WMS, WFS, 3D tile, and related formats). We also support data sharing (video and file transfer, data synchronization, large file resume) and communication solutions built around WebRTC. In all cases, the user interface is the browser.
+
+### Vertical framing
+
+**Defense & Intelligence**: Air-gapped deployment with no signals leakage to 3rd party services. "Warfighter Ready" — software that runs without racks or clouds; OS agnostic; lightweight; Android accessible. "Common Operating Picture" — shared situational awareness across datasources; point-of-use data curation; controlled data sharing.
+
+**Government**: Deployment is "On or Off Premise" (not exclusively on-prem). Key value prop is "Deterministic Control" — no background network calls, repeatable system behavior, fully inspectable processes.
+
+**Field Operations**: Media production is a primary use case alongside edge deployment and disconnected-first operation — large file transfer, project synchronization, zero cloud storage dependencies.
 
 ---
 
 ## Navigation (Tight)
 
 ```
-Product | Solutions | Security | Docs | Company | Contact
+Product | Solutions | Security | Company | Contact
 ```
 
 No more than this at top level. Dropdowns should be clean 2-column panels with short descriptions.

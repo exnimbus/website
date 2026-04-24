@@ -3,34 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exNimbus — Infrastructure for Constrained Environments</title>
+  <title>Security — exNimbus</title>
   <link rel="stylesheet" href="css/site.css">
-  <style>
-    body, html {
-      overflow-x: hidden;
-    }
-    .hero-home {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 2rem;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    .hero-home h1 {
-      text-shadow: 0 2px 40px rgba(0,0,0,0.7);
-    }
-    .hero-home p {
-      text-shadow: 0 1px 20px rgba(0,0,0,0.6);
-    }
-    .site-footer {
-      background: rgba(11, 15, 20, 0.95);
-    }
-  </style>
 </head>
-<body>
-
+<body class="inner-page">
 
   <!-- Site Nav -->
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
@@ -143,15 +119,75 @@
     </ul>
   </div>
 
-  <!-- Hero -->
+  <!-- Page Content -->
   <div class="page-body">
-    <section class="hero-home">
-      <span class="hero-eyebrow">exNimbus</span>
-      <h1>Modern infrastructure for constrained environments.</h1>
-      <p>Cloud-grade capabilities, deployed inside your perimeter. No external dependencies. No assumptions about connectivity.</p>
-      <div class="btn-group">
-        <a href="product.html" class="btn btn-primary">Explore Platform</a>
-        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+
+    <section class="hero">
+      <span class="hero-eyebrow">Security</span>
+      <h1>No external dependencies. No assumptions about connectivity.</h1>
+      <p>Security is not a feature layer on top of the architecture. It is the architecture. The platform operates on the assumption that the network outside your perimeter is untrusted — or absent entirely.</p>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Security posture -->
+    <section class="section" id="posture">
+      <p class="section-eyebrow">Security Posture</p>
+      <h2>Built for zero trust environments.</h2>
+      <p class="section-lead">Every request is authenticated. Every action is logged. No implicit trust is granted based on network position.</p>
+
+      <div class="card-grid-2">
+        <div class="card">
+          <h3>Zero Trust Architecture</h3>
+          <p>Authentication is required for every service interaction. Network adjacency grants no privilege. All service boundaries enforce identity verification.</p>
+          <ul class="card-attrs">
+            <li>Per-request authentication</li>
+            <li>No implicit internal trust</li>
+            <li>Configurable trust boundaries</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>No External Telemetry</h3>
+          <p>The platform does not transmit usage data, diagnostics, or telemetry outside your network. What happens inside your perimeter stays inside your perimeter.</p>
+          <ul class="card-attrs">
+            <li>Zero outbound analytics</li>
+            <li>No update check traffic</li>
+            <li>Fully auditable network behavior</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Compliance -->
+    <section class="section" id="compliance">
+      <p class="section-eyebrow">Compliance</p>
+      <h2>Configurable boundaries. Auditable by design.</h2>
+      <p class="section-lead">The platform is designed to support formal compliance reviews. Configuration is documented. Behavior is auditable. Nothing is hidden in managed infrastructure you do not control.</p>
+
+      <div class="card-grid-2">
+        <div class="card">
+          <h3>Single-Tenant Deployment</h3>
+          <p>Each installation is dedicated. No shared infrastructure, no shared keys, no multi-tenant data mixing.</p>
+        </div>
+        <div class="card">
+          <h3>Data Residency</h3>
+          <p>All data remains in your environment. There is no replication to external systems unless explicitly configured by you.</p>
+        </div>
+        <div class="card">
+          <h3>Operator-Controlled Keys</h3>
+          <p>Encryption keys are generated and managed within your environment. No vendor escrow, no managed key service.</p>
+        </div>
+      </div>
+
+      <div class="terminal-block" style="margin-top: 2.5rem;">
+        <div><span class="t-key">trust_model</span>: zero_trust</div>
+        <div><span class="t-key">external_telemetry</span>: false</div>
+        <div><span class="t-key">audit_logging</span>: true</div>
+        <div><span class="t-key">log_destination</span>: <span class="t-str">"local"</span></div>
+        <div><span class="t-key">key_management</span>: <span class="t-str">"operator"</span></div>
+        <div><span class="t-key">multi_tenant</span>: false</div>
       </div>
     </section>
 
@@ -201,7 +237,6 @@
     </footer>
   </div>
 
-  </script>
   <script src="js/nav.js" defer></script>
 </body>
 </html>

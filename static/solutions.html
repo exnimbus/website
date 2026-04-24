@@ -3,34 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exNimbus — Infrastructure for Constrained Environments</title>
+  <title>Solutions — exNimbus</title>
   <link rel="stylesheet" href="css/site.css">
-  <style>
-    body, html {
-      overflow-x: hidden;
-    }
-    .hero-home {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 2rem;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    .hero-home h1 {
-      text-shadow: 0 2px 40px rgba(0,0,0,0.7);
-    }
-    .hero-home p {
-      text-shadow: 0 1px 20px rgba(0,0,0,0.6);
-    }
-    .site-footer {
-      background: rgba(11, 15, 20, 0.95);
-    }
-  </style>
 </head>
-<body>
-
+<body class="inner-page">
 
   <!-- Site Nav -->
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
@@ -143,15 +119,155 @@
     </ul>
   </div>
 
-  <!-- Hero -->
+  <!-- Page Content -->
   <div class="page-body">
-    <section class="hero-home">
-      <span class="hero-eyebrow">exNimbus</span>
-      <h1>Modern infrastructure for constrained environments.</h1>
-      <p>Cloud-grade capabilities, deployed inside your perimeter. No external dependencies. No assumptions about connectivity.</p>
-      <div class="btn-group">
-        <a href="product.html" class="btn btn-primary">Explore Platform</a>
-        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+
+    <section class="hero">
+      <span class="hero-eyebrow">Solutions</span>
+      <h1>Deployed where the cloud ends.</h1>
+      <p>The platform operates in environments where public cloud connectivity is unavailable, restricted, or unacceptable. Designed for the conditions that exist, not the conditions that would be convenient.</p>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section" id="defense">
+      <p class="section-eyebrow">Vertical</p>
+      <h2>Defense &amp; Intelligence</h2>
+      <p class="section-lead">Deployed inside classified and sensitive compartmented environments. No external network path required.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Air-Gapped Deployment</h3>
+          <p>Operates with zero connection to the public internet. All services run within the facility perimeter.</p>
+          <ul class="card-attrs">
+            <li>No outbound network traffic</li>
+            <li>Offline-first architecture</li>
+            <li>No signals leakage to 3rd party services</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Warfighter Ready</h3>
+          <p>Operations don’t wait for infrastructure to catch up. Software that runs without racks or clouds.</p>
+          <ul class="card-attrs">
+            <li>Operating system agnostic</li>
+            <li>Lightweight deployments</li>
+            <li>Android accessible</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Common Operating Picture</h3>
+          <p>Maintain shared situational awareness across datasources.</p>
+          <ul class="card-attrs">
+            <li>Point-of-use data curation</li>
+            <li>Consistent views across environments</li>
+            <li>Controlled data sharing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section" id="infrastructure">
+      <p class="section-eyebrow">Vertical</p>
+      <h2>Critical Infrastructure</h2>
+      <p class="section-lead">For operators of power, water, and industrial control systems where connectivity is isolated by policy or necessity.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>OT Network Compatible</h3>
+          <p>Deployable alongside operational technology networks without requiring internet routing.</p>
+          <ul class="card-attrs">
+            <li>No cloud dependencies</li>
+            <li>VLAN-aware deployment</li>
+            <li>Low-latency local services</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>High Availability</h3>
+          <p>Designed for environments where downtime is not an acceptable operational state.</p>
+          <ul class="card-attrs">
+            <li>Redundant service configuration</li>
+            <li>Local failover</li>
+            <li>No external dependency failures</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Geospatial Awareness</h3>
+          <p>Map infrastructure assets, field teams, and operational boundaries within your local network.</p>
+          <ul class="card-attrs">
+            <li>OGC-compliant map services</li>
+            <li>Browser-native interface</li>
+            <li>No GIS client required</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section" id="government">
+      <p class="section-eyebrow">Vertical</p>
+      <h2>Government</h2>
+      <p class="section-lead">Deployed for agencies with compliance requirements with commercial cloud sensitivities.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>On or Off Premise</h3>
+          <p>Run entirely within government-controlled infrastructure. No shared multi-tenant architecture.</p>
+          <ul class="card-attrs">
+            <li>Single-tenant deployment</li>
+            <li>Government hardware compatible</li>
+            <li>No vendor-managed keys</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Deterministic Control</h3>
+          <p>No hidden services or background dependencies. System behavior is consistent, predictable, and fully observable.</p>
+          <ul class="card-attrs">
+            <li>No background network calls</li>
+            <li>Repeatable system behavior</li>
+            <li>Fully inspectable processes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section" id="field">
+      <p class="section-eyebrow">Vertical</p>
+      <h2>Field Operations</h2>
+      <p class="section-lead">Deployed at the edge where bandwidth is limited and connectivity is intermittent.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Disconnected-First</h3>
+          <p>All capabilities function without an upstream connection. Synchronizes when connectivity is available.</p>
+          <ul class="card-attrs">
+            <li>Local-first data model</li>
+            <li>Sync on reconnect</li>
+            <li>Conflict-aware merge</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Media Production</h3>
+          <p>Supports media workflows in field environments without cloud storage or transfer dependencies.</p>
+          <ul class="card-attrs">
+            <li>Large file transfer</li>
+            <li>Project synchronization and sharing</li>
+            <li>Zero cloud storage fees</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Edge Deployment</h3>
+          <p>Runs on constrained hardware in forward-deployed locations. Designed for the conditions on the ground.</p>
+          <ul class="card-attrs">
+            <li>Low resource footprint</li>
+            <li>Laptop and ruggedized hardware</li>
+            <li>USB and offline operations</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -201,7 +317,6 @@
     </footer>
   </div>
 
-  </script>
   <script src="js/nav.js" defer></script>
 </body>
 </html>

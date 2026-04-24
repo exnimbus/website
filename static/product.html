@@ -3,34 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exNimbus — Infrastructure for Constrained Environments</title>
+  <title>Product — exNimbus</title>
   <link rel="stylesheet" href="css/site.css">
-  <style>
-    body, html {
-      overflow-x: hidden;
-    }
-    .hero-home {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 2rem;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    .hero-home h1 {
-      text-shadow: 0 2px 40px rgba(0,0,0,0.7);
-    }
-    .hero-home p {
-      text-shadow: 0 1px 20px rgba(0,0,0,0.6);
-    }
-    .site-footer {
-      background: rgba(11, 15, 20, 0.95);
-    }
-  </style>
 </head>
-<body>
-
+<body class="inner-page">
 
   <!-- Site Nav -->
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
@@ -143,15 +119,137 @@
     </ul>
   </div>
 
-  <!-- Hero -->
+  <!-- Page Content -->
   <div class="page-body">
-    <section class="hero-home">
-      <span class="hero-eyebrow">exNimbus</span>
-      <h1>Modern infrastructure for constrained environments.</h1>
-      <p>Cloud-grade capabilities, deployed inside your perimeter. No external dependencies. No assumptions about connectivity.</p>
+
+    <section class="hero">
+      <span class="hero-eyebrow">Platform</span>
+      <h1>Infrastructure software for constrained environments.</h1>
+      <p>
+        Designed from the ground up for networks that cannot reach the public internet.
+        The browser is the interface. 
+        The perimeter is the product.</p>
       <div class="btn-group">
-        <a href="product.html" class="btn btn-primary">Explore Platform</a>
-        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+        <a href="contact.html" class="btn btn-primary">Get in touch</a>
+        <a href="solutions.html" class="btn btn-ghost">View solutions</a>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Deployment Modes -->
+    <section class="section">
+      <p class="section-eyebrow">Deployment</p>
+      <h2>Deploy where you operate.</h2>
+      <p class="section-lead">The platform adapts to your network topology — not the other way around.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+          </svg>
+          <h3>On-Premises</h3>
+          <p>Deployed entirely within your facility. No cloud connections required. Hardware and OS agnostic.</p>
+        </div>
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          <h3>Air-Gapped</h3>
+          <p>Operates in fully isolated environments with no physical network path to the internet. Offline-first by design.</p>
+        </div>
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="3"/><path d="M3 12h3m12 0h3M12 3v3m0 12v3"/>
+          </svg>
+          <h3>Hybrid</h3>
+          <p>Synchronized between distrubted peer-to-peer networks and central command-and-control.</p>
+        </div>
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          <h3>Edge</h3>
+          <p>Lightweight deployments for resource-constrained hardware in the field. Designed for intermittent connectivity.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Mapping -->
+    <section class="section" id="mapping">
+      <p class="section-eyebrow">Mapping &amp; Geospatial</p>
+      <h2>Standards-based web mapping, inside your perimeter.</h2>
+      <p class="section-lead">Built on Open Geospatial Consortium standards. Serves map tiles, feature data, and spatial queries entirely from within your network.</p>
+
+      <div class="card-grid-2">
+        <div class="card">
+          <h3>OGC-Compliant Services</h3>
+          <p>Implements WMS, WFS, 3D tile, and related standards. Compatible with standard GIS clients without modification.</p>
+        </div>
+        <div class="card">
+          <h3>Browser-Native Interface</h3>
+          <p>No client software to install. The full mapping interface runs in any modern browser on your local network.</p>
+        </div>
+        <div class="card">
+          <h3>Disconnected Operation</h3>
+          <p>Tile caches, feature stores, and services operate without upstream connectivity once deployed.
+            Add data in the field.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- File Transfer -->
+    <section class="section" id="transfer">
+      <p class="section-eyebrow">Data Sharing</p>
+      <h2>Video and file transfer without centralized infrastructure.</h2>
+      <p class="section-lead">Content moves directly between endpoints on your network.</p>
+
+      <div class="card-grid-2">
+        <div class="card">
+          <h3>Large File Support</h3>
+          <p>Automatically resume after interruptions, even if files have changed.</p>
+        </div>
+        <div class="card">
+          <h3>Data Synchronization</h3>
+          <p>Intelligently share hundred of files in one click.</p>
+        </div>
+        <div class="card">
+          <h3>Direct Transfer</h3>
+          <p>End-to-end transfer between browser clients on the same network. No cloud storage fees.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Communications -->
+    <section class="section" id="comms">
+      <p class="section-eyebrow">Communications</p>
+      <h2>Real-time channels inside your perimeter.</h2>
+      <p class="section-lead">Browser-native communication built on open standards. No proprietary servers. No accounts with external services.</p>
+
+      <div class="card-grid-2">
+        <div class="card">
+          <h3>Cloud-free Operation</h3>
+          <p>Coordinated or peer-to-peer communications</p>
+        </div>
+        <div class="card">
+          <h3>No Client Install</h3>
+          <p>Runs entirely in the browser. Users need only a URL on your local network.</p>
+        </div>
+      </div>
+
+      <div class="terminal-block">
+        <div><span class="t-key">deployment_target</span>: on_prem</div>
+        <div><span class="t-key">external_telemetry</span>: false</div>
+        <div><span class="t-key">standards</span>: [<span class="t-str">"OGC WMS"</span>, <span class="t-str">"OGC WFS"</span>, <span class="t-str">"WebRTC"</span>]</div>
+        <div><span class="t-key">interface</span>: <span class="t-str">"browser"</span></div>
+        <div><span class="t-key">connectivity_required</span>: false</div>
       </div>
     </section>
 
@@ -201,7 +299,6 @@
     </footer>
   </div>
 
-  </script>
   <script src="js/nav.js" defer></script>
 </body>
 </html>

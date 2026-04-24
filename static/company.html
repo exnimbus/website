@@ -3,34 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exNimbus — Infrastructure for Constrained Environments</title>
+  <title>Company — exNimbus</title>
   <link rel="stylesheet" href="css/site.css">
-  <style>
-    body, html {
-      overflow-x: hidden;
-    }
-    .hero-home {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 2rem;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    .hero-home h1 {
-      text-shadow: 0 2px 40px rgba(0,0,0,0.7);
-    }
-    .hero-home p {
-      text-shadow: 0 1px 20px rgba(0,0,0,0.6);
-    }
-    .site-footer {
-      background: rgba(11, 15, 20, 0.95);
-    }
-  </style>
 </head>
-<body>
-
+<body class="inner-page">
 
   <!-- Site Nav -->
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
@@ -143,15 +119,61 @@
     </ul>
   </div>
 
-  <!-- Hero -->
+  <!-- Page Content -->
   <div class="page-body">
-    <section class="hero-home">
-      <span class="hero-eyebrow">exNimbus</span>
-      <h1>Modern infrastructure for constrained environments.</h1>
-      <p>Cloud-grade capabilities, deployed inside your perimeter. No external dependencies. No assumptions about connectivity.</p>
-      <div class="btn-group">
-        <a href="product.html" class="btn btn-primary">Explore Platform</a>
-        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+
+    <section class="hero">
+      <span class="hero-eyebrow">Company</span>
+      <h1>Built by engineers, for constrained environments.</h1>
+      <p>We build infrastructure software for the environments that commercial cloud vendors do not design for. Not as an afterthought — as the starting point.</p>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Philosophy -->
+    <section class="section">
+      <p class="section-eyebrow">Philosophy</p>
+      <h2>The assumptions we do not make.</h2>
+
+      <div class="prose" style="margin-bottom: 3rem;">
+        <p>Most infrastructure software is designed for environments where connectivity is assumed, cloud services are available, and the network perimeter is a theoretical construct. That is not the environment our customers operate in.</p>
+        <p>We design for the other case. Networks that may be intermittent, isolated, or deliberately air-gapped. Environments where every dependency is a liability and every external call is a potential failure mode. Facilities where data residency is not a compliance checkbox but an operational requirement.</p>
+        <p>That constraint is not a limitation on what we build. It is the specification.</p>
+      </div>
+
+      <div class="terminal-block">
+        <div><span class="t-key"># Engineering principles</span></div>
+        <div>&nbsp;</div>
+        <div><span class="t-str">"The browser is the interface."</span></div>
+        <div><span class="t-str">"The network is not guaranteed."</span></div>
+        <div><span class="t-str">"The perimeter is the product."</span></div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Principles -->
+    <section class="section">
+      <p class="section-eyebrow">Principles</p>
+      <h2>How we work.</h2>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>No External Dependencies by Default</h3>
+          <p>Every component we ship can operate without a connection to the public internet. If something requires external access, that is a deliberate exception documented in the configuration.</p>
+        </div>
+        <div class="card">
+          <h3>The Browser Is Enough</h3>
+          <p>We do not require client software. The full interface is delivered through a browser on your local network. This is a capability constraint we impose on ourselves, not a cost-cutting measure.</p>
+        </div>
+        <div class="card">
+          <h3>Open Standards Where Possible</h3>
+          <p>We implement OGC standards for geospatial services and open protocols for communication. This is not because it is easier. It is because our customers need interoperability without negotiation.</p>
+        </div>
+        <div class="card">
+          <h3>Auditability Over Convenience</h3>
+          <p>We log what the system does. We do not obscure behavior behind managed services. If an auditor needs to understand what happened on your network, the answer should be in your own logs.</p>
+        </div>
       </div>
     </section>
 
@@ -201,7 +223,6 @@
     </footer>
   </div>
 
-  </script>
   <script src="js/nav.js" defer></script>
 </body>
 </html>
