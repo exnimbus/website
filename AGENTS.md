@@ -38,7 +38,7 @@ General themes only:
 - Deployment modes: On-Prem, Air-Gapped, Hybrid, Edge
   - **Hybrid** means synchronized between distributed peer-to-peer networks and central command-and-control — not cloud-hybrid
 - Target verticals: Defense & Intelligence, Critical Infrastructure, Government, Field Operations, Media
-- Security posture: zero trust, full audit logging, RBAC, no external telemetry
+- Security posture: zero trust, full audit logging, no external telemetry
 - Platform is OS agnostic and Android accessible
 
 Our product offering primarily centers on web mapping technologies based on Open Geospatial Consortium standards (WMS, WFS, 3D tile, and related formats). We also support data sharing (video and file transfer, data synchronization, large file resume) and communication solutions built around WebRTC. In all cases, the user interface is the browser.
